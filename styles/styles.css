@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.MainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.AppArea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15.5px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.contentBox {
+  width: 100%;
+}
+.contentBox-T-Con span {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+
+  /* identical to box height, or 14px */
+
+  /* N/10 */
+  color: #1d232b;
+}
+.contentBox-T {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profileImg {
+  position: relative;
+  top: -3px;
+}
+.contentBox-T-Con {
+  margin-left: 8px;
+  margin-right: 4px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.contentBox-TopLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.greenBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 24px;
+  background: #01b99f;
+  border-radius: 999px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.circle {
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background: #919eb6;
+  margin: 0 4px;
+}
+.lowOpacitySpan {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+.lowOpacitySpanTwo {
+  margin-left: 4px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+
+  /* identical to box height, or 10px */
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  /* N/5 */
+  color: #919eb6;
+}
+.contentBox-T p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+
+  /* identical to box height, or 12px */
+
+  /* N/5 */
+  color: #919eb6;
+}
+
+.contentBox-MidLine {
+  display: flex;
+  flex-direction: column;
+}
+.contentHead {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+
+  /* identical to box height, or 14px */
+  letter-spacing: -0.01em;
+
+  /* N/10 */
+  color: #1d232b;
+  margin: 16px 0;
+}
+.contentP {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #313b49;
+}
+
+.contentBox-PillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+.pill {
+  padding: 5px 12px;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #5a6b87;
+  background: #f7f8fa;
+  border: 0.5px solid #ced3de;
+  border-radius: 999px;
+}
+
+.ImgContainer {
+  width: calc(100% + 31px);
+  position: relative;
+  left: -15.5px;
+  background-color: red;
+  margin-top: 16px;
+}
+
+.ImgContainer img {
+  width: 100%;
+}
+.imageSliderPills {
+  display: flex;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 5px;
+}
+.sliderPills {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+.sliderPills.active {
+  opacity: 1;
+}
+.ReactionCon {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 10px 0;
+}
+.reaction {
+  display: flex;
+  align-items: center;
+  margin: 0 2.5px;
+}
+.ReactionCon img {
+  position: relative;
+  /* top: 1px; */
+}
+.reaction-imgCon {
+  background-color: #d3d3d300;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.reaction-imgCon:active {
+  background-color: #d3d3d3;
+}
+
+.reactionNum {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  /* identical to box height, or 12px */
+
+  /* N/5 */
+
+  color: #919eb6;
+}
+
+.lineSeperator {
+  width: calc(100% + 32px);
+  left: -15.5px;
+  position: relative;
+  height: 2px;
+  background: #f7f8fa;
+  margin-bottom: 20px;
+}
+
+.commentBox {
+  margin-bottom: 20px;
+}
+.commentBox-Top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.commentBox-Top-L {
+  display: flex;
+  align-items: center;
+}
+.commentBox-Top-R {
+  margin-top: -10px;
+}
+
+.commentBox-Mid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  /* align-items: flex-end; */
+}
+
+.commentBox-Mid-Holder {
+  margin-left: 44px;
+}
+
+.subComments {
+  margin-left: 44px;
+}
+
+.commentBox-Mid-Holder .span {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  /* or 12px */
+
+  letter-spacing: -0.01em;
+
+  /* N/9 */
+
+  color: #313b49;
+}
+
+.inputCon {
+  width: calc(100% + 31px);
+  position: relative;
+  left: -15.5px;
+  height: 42px;
+
+  /* margin-bottom: 40px; */
+  border-top: 1px solid #f7f8fa;
+}
+
+.inputCon input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding-left: 66px;
+}
+
+input[type='file'] {
+  display: none;
+}
+.custom-file-upload {
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+  /* background-color: red; */
+  position: absolute;
+  left: 16px;
+  top: 3px;
+}
+
+.sendBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #919eb6;
+  background-color: red;
+  padding: 6px;
+  background-color: #d3d3d300;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.sendBtn:active {
+  background-color: #d3d3d3;
+}
